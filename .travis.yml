@@ -1,0 +1,19 @@
+branches:
+  only:
+  - master
+language: python
+python:
+- 2.7
+script:
+    - ../buildbot/build.sh scipy-conference/scipy-papers-2014
+notifications:
+  email:
+    on_success: always
+    on_failure: always
+before_install:
+  - git clone --recursive https://github.com/openproceedings/openproceedings-buildbot.git ../buildbot
+  - source ../buildbot/prepare.sh
+after_success: ../buildbot/deploy.sh 2014
+env:
+  global:
+## https://gist.github.com/floydpink/4631240
