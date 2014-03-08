@@ -11,7 +11,7 @@ notifications:
     on_success: always
     on_failure: always
 before_install:
-  - git clone --recursive https://github.com/openproceedings/openproceedings-buildbot.git ../buildbot
+  - git clone --recursive https://github.com/scipy-conference/openproceedings-buildbot-scipy.git ../buildbot
   - source ../buildbot/prepare.sh
 after_success: ../buildbot/deploy.sh proceedings/2014
 env:
