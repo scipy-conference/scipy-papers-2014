@@ -16,4 +16,4 @@ before_install:
 after_success: bash ../buildbot/deploy.sh proceedings/2014
 env:
   global:
-    - secure: eQ6fJ17jLjytryNrOE+iI4fbh/nXjUQDRzffFlt1sWjbzxZMKWgSwEEHfoid94Ia0nhTP6hdwCP9/13sGobhCjJdXWWXuspSw0pEljDWeihSn1hCdOdTmVcqWCkHcxvVNsDOBRNunvBFTf1bVHfRJMwrQeZGFgNXAsgLyHFIXHc=
+    - secure: WRUJh+ZuAxcNal0+GWVwMQwvcEX0M9bqfTbKAvVKQhhQWkfd1nKId225YcsJm0e83wI5noW30B5o9RwA9kXHDx42/7kv6xk8E2WET+iSK5nCMTZfiBmg/H0CYm5s3dyf4+SbCwyY1BqY8JH5qnZV1VNgYFQlVtQSaRm9oV2cxiY=
