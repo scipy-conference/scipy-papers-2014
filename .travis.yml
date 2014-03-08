@@ -13,7 +13,7 @@ notifications:
 before_install:
   - git clone --recursive https://github.com/scipy-conference/openproceedings-buildbot-scipy.git ../buildbot
   - source ../buildbot/prepare.sh
-after_success: ../buildbot/deploy.sh proceedings/2014
+after_success: bash ../buildbot/deploy.sh proceedings/2014
 env:
   global:
     - secure: eQ6fJ17jLjytryNrOE+iI4fbh/nXjUQDRzffFlt1sWjbzxZMKWgSwEEHfoid94Ia0nhTP6hdwCP9/13sGobhCjJdXWWXuspSw0pEljDWeihSn1hCdOdTmVcqWCkHcxvVNsDOBRNunvBFTf1bVHfRJMwrQeZGFgNXAsgLyHFIXHc=
